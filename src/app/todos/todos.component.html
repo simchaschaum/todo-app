@@ -1,0 +1,6 @@
+<div class="todos">
+    <div *ngFor="let todo of todoArray; let i = index" class="todo {{todo.done ? 'done' : ''}}" (click)="toggleDone(i)">
+        {{todo.content}}
+        <button (click)="handleRemove(i)">Remove</button>
+    </div>
+</div>
