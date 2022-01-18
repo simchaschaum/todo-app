@@ -1,13 +1,17 @@
 :root{
-    --clr-main: #003333;
+    --clr-main: #0C4B4B;
     --clr-sec: #553900;
 }
 
+/* The To-Dos Div */
+
 .todos{
-    border: 1px solid var(--clr-main);
-    width: 65%;
+    width: 50%;
     margin: 0 auto;
-    background-color: var(--clr-sec);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 @media(max-width:600px){
     .todos{
@@ -15,12 +19,63 @@
     }
 }
 
+/* The Input Form */
+.section{
+    border-radius: 5px;
+    box-shadow: 0 0 5px #0C4B4B;
+    width: 100%;
+    margin-bottom: 2.5%;
+    padding: 1.5%;
+    font-family: sans-serif;
+}
 form{
-    padding: 2.5%
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-between;
+    align-items: center;
+}
+input{
+    padding: 1.5%;
+    font-size: 1.25em;
+    border: 1px solid rgba(12, 75, 75,0.5);
+    border-radius: 5px;
+}
+input[type=text]{
+    width: 90%;
+    height: 25px;
+    margin: 2.5%;
+}
+input[type=submit]{
+    width: 70%;
+    margin-bottom: 2.5%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #553900;
+    color: white;
+    cursor: pointer;
 }
 
 
-
+/* Individual To-Do Items */
+.todo{
+    font-size: 1.25em;
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5%
+}
+.todo button{
+    border: none;
+    border-radius: 5px;
+    background-color: #553900;
+    color: white;
+    cursor: pointer;
+    margin: 2.5%;
+    height: 50px;
+}
+.todo p{
+    margin: 2.5%
+}
 
 
 

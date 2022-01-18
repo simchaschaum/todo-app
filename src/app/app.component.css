@@ -5,7 +5,7 @@
 }
 
 :root{
-    --clr-main: #003333;
+    --clr-main: #0C4B4B;
     --clr-sec: #553900;
 }
 
@@ -13,4 +13,5 @@ h1{
     font-family: sans-serif;
     text-align: center;
     margin: 5% auto;
+    color: #0C4B4B
 }
