@@ -4,13 +4,15 @@
     box-sizing: border-box;
 }
 
+
 :root{
     --clr-main: #0C4B4B;
     --clr-sec: #553900;
 }
 
 h1{
-    font-family: sans-serif;
+    font-family: 'Mochiy Pop P One', sans-serif;    
+    font-size: 3em;
     text-align: center;
     margin: 5% auto;
     color: #0C4B4B
