@@ -70,7 +70,7 @@ input[type=submit]:hover,
     font-size: 1.25em;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto 20px auto;
+    margin: 0 auto;
     cursor: pointer;
     width: 100%
 }
