@@ -8,22 +8,16 @@ import { Todo } from '../models/todo';
 })
 export class TodosComponent implements OnInit {
 
+  
+  todoArray!:Todo[];
+
+  inputTodo:string = "";
+
   constructor() { }
 
   ngOnInit(): void {
-    this.todoArray = [
-      {
-        content: "pick nose",
-        done: false
-      },
-      {
-        content: "poke nose",
-        done: false
-      }
-    ]
+    this.todoArray = []
   }
-
-  todoArray!:Todo[];
 
   toggleDone(i:number){
     this.todoArray.map((item,index)=>{
@@ -36,4 +30,15 @@ export class TodosComponent implements OnInit {
   handleRemove(i:number){
     this.todoArray = this.todoArray.filter((item,index)=>index !== i)
   }
+
+  addTodo () {
+    if(this.inputTodo.length > 0)
+      this.todoArray.push({
+        content: this.inputTodo,
+        done: false
+      });
+
+    this.inputTodo = "";
+  }
+
 }

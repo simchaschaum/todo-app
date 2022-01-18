@@ -1,3 +1,29 @@
+:root{
+    --clr-main: #003333;
+    --clr-sec: #553900;
+}
+
+.todos{
+    border: 1px solid var(--clr-main);
+    width: 65%;
+    margin: 0 auto;
+    background-color: var(--clr-sec);
+}
+@media(max-width:600px){
+    .todos{
+        width: 95%
+    }
+}
+
+form{
+    padding: 2.5%
+}
+
+
+
+
+
+
 .done{
     text-decoration: line-through;
 }

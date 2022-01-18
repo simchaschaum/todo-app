@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --clr-main: #003333;
+    --clr-sec: #553900;
+}
+
+h1{
+    font-family: sans-serif;
+    text-align: center;
+    margin: 5% auto;
+}
